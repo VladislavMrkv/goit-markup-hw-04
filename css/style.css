@@ -11,6 +11,8 @@
   --third-bg-color: #eeeeee;
 
   --border-header-color: solid #ececec;
+
+  --icon-color: #afb1b8;
 }
 
 p,
@@ -101,8 +103,17 @@ body {
 .header_link:hover,
 .header_link:focus,
 .header_contacts_link:hover,
-.header_contacts_link:focus {
+.header_contacts_link:focus,
+.header_contacts_link:hover .header_icon,
+.header_contacts_link:focus .header_icon {
   color: var(--accent-color);
+  fill: var(--accent-color);
+}
+
+.header_icon {
+  fill: var(--icon-color);
+
+  margin-right: 10px;
 }
 
 .header_link.current {
@@ -304,6 +315,8 @@ body {
 }
 
 .our_team_item {
+  height: 428px;
+
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
@@ -327,6 +340,8 @@ body {
   text-align: center;
 
   color: var(--primary-text-color);
+
+  margin-bottom: 16px;
 }
 
 .our_team_list {
@@ -342,7 +357,85 @@ body {
   padding-bottom: 30px;
 }
 
+.social_item {
+  width: 44px;
+  height: 44px;
+}
+
+.social_item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social_list {
+  display: flex;
+  justify-content: center;
+}
+
+.social_link {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--primary-title-color);
+}
+
+.social_link:hover,
+.social_link:focus {
+  background-color: var(--accent-color);
+}
+
+.social_link:hover .social_icon,
+.social_link:focus .social_icon {
+  fill: var(--primary-title-color);
+}
+
+.social_icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--icon-color);
+}
+
 /*---------footer--------*/
+
+.footer_soc {
+  margin-left: 301px;
+  padding-top: 48px;
+  width: 210px;
+}
+
+.footer_social_item {
+  width: 44px;
+  height: 44px;
+}
+
+.footer_social_link {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer_social_link:hover,
+.footer_social_link:focus {
+  background-color: var(--accent-color);
+}
+
+.footer_social_item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer_social_icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--primary-title-color);
+}
 
 .footer {
   padding-top: 60px;
@@ -366,7 +459,7 @@ body {
 }
 
 .footer_adress {
-  margin-top: 20px;
+  margin-top: -20px;
 }
 
 .footer_item:not(:last-child) {
