@@ -467,7 +467,8 @@ body {
 
 .footer_soc {
   margin-left: 301px;
-  padding-top: 48px;
+  margin-top: 20px;
+
   width: 210px;
 }
 
@@ -524,7 +525,7 @@ body {
 }
 
 .footer_adress {
-  margin-top: -20px;
+  margin-top: -40px;
 }
 
 .footer_item:not(:last-child) {
@@ -555,6 +556,20 @@ body {
 .footer_link:hover,
 .footer_link:focus {
   color: var(--accent-color);
+}
+
+.footer_word {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--primary-title-color);
+
+  margin-left: 156px;
+
+  margin-bottom: 20px;
 }
 
 /*---------portfolio--------*/
