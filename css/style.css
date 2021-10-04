@@ -112,7 +112,7 @@ body {
 
 .header_icon {
   fill: var(--icon-color);
-
+  vertical-align: middle;
   margin-right: 10px;
 }
 
@@ -466,10 +466,7 @@ body {
 /*---------footer--------*/
 
 .footer_soc {
-  margin-left: 301px;
   margin-top: 20px;
-
-  width: 210px;
 }
 
 .footer_social_item {
@@ -525,7 +522,7 @@ body {
 }
 
 .footer_adress {
-  margin-top: -40px;
+  margin-top: 20px;
 }
 
 .footer_item:not(:last-child) {
@@ -567,9 +564,15 @@ body {
 
   color: var(--primary-title-color);
 
-  margin-left: 156px;
-
   margin-bottom: 20px;
+}
+
+.right-footer-div {
+  margin-left: 70px;
+}
+
+.footer-container {
+  display: flex;
 }
 
 /*---------portfolio--------*/
@@ -617,8 +620,7 @@ body {
   margin-right: 30px;
 }
 
-.hero_portfolio_second_items:hover,
-.hero_portfolio_second_items:focus {
+.hero_portfolio_second_items:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -655,7 +657,9 @@ body {
 }
 
 .portfolio-card-text {
-  border: 1px solid var(--third-bg-color);
+  border-left: 1px solid var(--third-bg-color);
+  border-right: 1px solid var(--third-bg-color);
+  border-bottom: 1px solid var(--third-bg-color);
 
   padding-left: 24px;
   padding-top: 20px;
@@ -671,4 +675,13 @@ body {
 .active {
   color: var(--primary-title-color);
   background: var(--accent-color);
+}
+
+.card-focus {
+  display: inline-block;
+}
+
+.card-focus:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
